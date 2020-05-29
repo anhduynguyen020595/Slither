@@ -8,6 +8,7 @@ class game {
 
     this.snake = new snake(this);
     this.screen = new screen(this);
+    this.background = new background(this);
 
     this.loop();
   }
@@ -21,6 +22,7 @@ class game {
   update() {
     this.snake.update();
     this.screen.update();
+    this.background.update();
   }
 
   clearScreen() {
@@ -31,6 +33,7 @@ class game {
   draw() {
     this.clearScreen();
     this.snake.draw();
+    this.background.draw();
     // this.screen.drawCircle({ x: 2500, y: 2500 });s
   }
 }

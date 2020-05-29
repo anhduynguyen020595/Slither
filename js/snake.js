@@ -3,6 +3,7 @@ class snake {
     this.game = game;
     this.x = GAME_WIDTH / 2;
     this.y = GAME_HEIGHT / 2;
+    this.angle = 0;
     this.listenMouseEvent();
   }
   listenMouseEvent() {
@@ -16,7 +17,11 @@ class snake {
   }
 
   processMouseMove(mousePos) {
-    console.log(mousePos);
+    this.angle = Math.atan2(
+      mousePos.y - SCREEN_HEIGHT / 2,
+      mousePos.x - SCREEN_WIDTH / 2
+    );
+    console.log(this.angle);
   }
 
   update() {}
