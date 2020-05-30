@@ -32,9 +32,8 @@ class game {
 
   draw() {
     this.clearScreen();
-    this.snake.draw();
     this.background.draw();
-    // this.screen.drawCircle({ x: 2500, y: 2500 });s
+    this.snake.draw();
   }
 }
 
