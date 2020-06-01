@@ -4,6 +4,7 @@ class snake {
     this.x = GAME_WIDTH / 2;
     this.y = GAME_HEIGHT / 2;
     this.angle = 0;
+    this.eye = new eye(this);
     this.tailsPosition = [];
     this.createTail();
     this.listenMouseEvent();
@@ -82,5 +83,8 @@ class snake {
       },
       "snake"
     );
+
+    //draw snake eye
+    this.eye.draw();
   }
 }

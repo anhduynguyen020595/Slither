@@ -18,7 +18,11 @@ class screen {
     let styles = {};
     //style for snake
     styles["snake"] = { color: "#F65A5A", borderColor: "red", width: 20 };
-    styles["eye"] = {};
+    styles["eye"] = {
+      color: "white",
+      borderColor: "white",
+      width: 10,
+    };
     styles["shadow"] = {
       color: "rgba(0, 0, 0, 0.1)",
       borderColor: "rgba(0, 0, 0, 0.1)",
